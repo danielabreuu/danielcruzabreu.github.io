@@ -1,57 +1,62 @@
-
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <style>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
         *{margin:0;}
+        body{
+            text-align:center;
+            width:100%;
+	          color:white;
+        }
         header{
-        background:linear-gradient(to right, red ,yellow);
-        color:white;
-        padding-left:20px;
-        padding-bottom:20px;
-        font-size:40px;
-        height:160px;
+        height:10rem;
         background: url(https://media3.giphy.com/media/3o7aD9y2CKtGHRfhOE/giphy.webp?cid=790b7611b06d250e3119475637029a445de18a754abaabf1&rid=giphy.webp);
         background-size:cover;
         background-position:center;
+        border-bottom:5px solid black;
+        min-height:10rem;
         }
         header:hover{
         filter:invert(1);
         }
-        body{
-            text-align:center;
-            width:100%;
-	    color:white;
-        }
         #name{
         font-family:Orbitron, Roboto;
-        font-size:60px;
-        text-height:160px;
-        padding-top:40px;
+        font-size:4rem;
+        padding-top:3rem
         }
         .workspace{
-        font-size:20px;
+        font-size:1.25rem;
         font-family:Orbitron, Roboto;
         padding-top:10px;
         background:linear-gradient(#161616,darkred,#161616);
-        height:800px;
-        border-top:5px solid black;
+        height:50rem;
         }
-        ul{
+        .welcomeText{
         list-style:none;
         }
+      .backbtn{
+        background:linear-gradient(to bottom, black, #161616);
+        position:fixed;
+        padding: 10px 5px 5px 5px;
+        border-radius:10px 10px 10px 10px; 
+        right:0px;
+      }
+      .backbtn:hover{
+        cursor:pointer
+      }
     </style>
 	<link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
     <title>Daniel's Page</title>
 </head><body>
     <header>
-        <div id="ok">
         	<h1 id="name">Daniel Cruz Abreu</h1>
-        </div>
     </header>
     <div class="workspace">
-        <ul>
+        <ul class="welcomeText">
             <li><strong>Thank You for checking out my site</strong></li>
             <li>Come again</li>
         </ul>
+        <p class="backbtn">Back to Top</p>
     </div>
 </body></html>
