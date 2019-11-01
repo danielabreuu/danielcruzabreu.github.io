@@ -1,66 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<style>
-        *{margin:0;}
-        body{
-            text-align:center;
-            width:100%;
-	          color:white;
-        }
-        header{
-        height:10rem;
-        background: url(https://media3.giphy.com/media/3o7aD9y2CKtGHRfhOE/giphy.webp?cid=790b7611b06d250e3119475637029a445de18a754abaabf1&rid=giphy.webp);
+ <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <style>
+      body{
+        width:100%; background:url(https://github.com/danielcruzabreu/danielcruzabreu.github.io/blob/master/images/BlueMarble3.jpg?raw=true);
         background-size:cover;
-        background-position:center;
-        border-bottom:5px solid black;
-        min-height:10rem;
-        }
-        header:hover{
-        filter:invert(1);
-        }
-        #name{
-        font-family:Orbitron, Roboto;
-        font-size:4rem;
-        padding-top:3rem
-        }
-        .workspace{
-        font-size:1.25rem;
-        font-family:Orbitron, Roboto;
-        padding-top:10px;
-        background:linear-gradient(#161616,darkred,#161616);
-        height:1600px;
-        }
-        .welcomeText{
-        list-style:none;
-        }
-      .backbtn{
-        background:linear-gradient(to bottom, black, #161616);
-        position:fixed;
-        padding: 10px 5px 5px 5px;
-        border-radius:10px 10px 10px 10px; 
-        right:0px;
-        display:none;
+        background-repeat:repeat-y;
+        font-family:Lato;
       }
-      .backbtn:hover{
-        cursor:pointer
+      .nameSpace{
+        height:20rem;
       }
-      img{width:810.5px;height:404px;}
+      #name{
+        font-family:Lato;
+        font-size:38px;
+      }
+      .bg-xdark{
+        background-color:#18181a;
+      }
+      .newBox{
+        height:20rem;
+      }
+      test{
+        height:70px;
+      }
+      img{
+        /*width:405.25px;height:202px;*/
+        width:303px;height:150px;
+      }
     </style>
-	<link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
-    <title>Daniel's Page</title>
-</head><body>
-    <header>
-        	<h1 id="name">Daniel Cruz Abreu</h1>
-    </header>
-    <div class="workspace">
-        <ul class="welcomeText">
-            <li><strong>Thank You for checking out my site</strong></li>
-            <li>New projects below</li>
-        </ul>
-      <a href="https://l1k2iddsbi8ggifgzfnsrw-on.drv.tw/imgswithbootstrap.html"><img src="https://github.com/danielcruzabreu/danielcruzabreu.github.io/blob/master/images/imageGallery.PNG?raw=true"></a>
-      <a href="https://l1k2iddsbi8ggifgzfnsrw-on.drv.tw/startupPage.html"><img src="https://github.com/danielcruzabreu/danielcruzabreu.github.io/blob/master/images/startupPage.PNG?raw=true"></a>
-        <p class="backbtn">Back to Top</p>
-    </div>
-</body></html>
+    <title>Daniel Cruz Abreu</title>
+ </head>
+  
+ <body>
+   
+   <div class="container-fluid bg-xdark">
+     
+   <nav class="navbar navbar-dark navbar-expand-sm text-white p-3 p-sm-4">
+     <a class="navbar-brand border-bottom border-white p-2">Welcome</a>
+     
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+     </button>
+     
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="navbar-nav mr-auto text-white">
+         <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+         <li class="nav-item"><a class="nav-link text-white" href="#">Projects</a></li>
+       </ul>
+     </div>
+     
+   </nav>
+   </div>
+   
+   <div class="d-flex align-items-center justify-content-center text-white border border-white nameSpace">
+     <h1 class="display-5" id="name">Daniel Cruz Abreu </h1>
+   </div>
+   
+   <div class="row m-0 bg-xdark justify-content-center text-center text-white border border-info">
+     <div class="row w-100 border border-success">
+     <h1 class="col-12 p-2 m-0 display-5 border border-danger">Projects</h1>
+     <div class="row w-100 m-0 justify-content-between border border-warning">
+       <div class="col-sm-6 p-0 border border-info">
+         <a href="https://l1k2iddsbi8ggifgzfnsrw-on.drv.tw/startupPage.html"><img src="https://github.com/danielcruzabreu/danielcruzabreu.github.io/blob/master/images/startupPage.PNG?raw=true"></a>
+       </div>
+       <div class="col-sm-6 p-0 border border-info">
+         <a href="https://l1k2iddsbi8ggifgzfnsrw-on.drv.tw/imgswithbootstrap.html"><img src="https://github.com/danielcruzabreu/danielcruzabreu.github.io/blob/master/images/imageGallery.PNG?raw=true"></a>
+       </div>
+     </div>
+   </div>
+       
+   </div>
+   
+   <div class="d-flex newBox justify-content-center text-white border border-white">
+     <h1 class="display-5 pt-2">About Me</h1>
+   </div>
+   
+</body>
+</html>
