@@ -11,6 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!--CSS-->
     <style>
       body{
         width:100%; background:url(https://github.com/danielcruzabreu/danielcruzabreu.github.io/blob/master/images/BlueMarble3.jpg?raw=true);
@@ -19,16 +20,19 @@
         font-family:Lato;
       }
       .nameSpace{
-        height:20rem;
+        height:25rem;
       }
-      #name{
-        font-family:Lato;
-        font-size:38px;
+      .name{
+        font-weight:900;
+      }
+      .word{
+       font-weight:500;
+       font-size:26px;
       }
       .bg-xdark{
         background-color:#101014;
       }
-      .newBox{
+      .h-20rem{
         height:20rem;
       }
       test{
@@ -36,18 +40,24 @@
       }
       img{
         /*width:405.25px;height:202px;*/
-        width:303px;height:150px;
+        width:302px;height:152px;
+      }
+      hr{
+        color:white;
+        background-color:white;
+        border-top:3px solid white;
+        
       }
     </style>
     <title>Daniel Cruz Abreu</title>
  </head>
   
  <body>
-   
+   <!--Navbar-->
    <div class="container-fluid bg-xdark">
      
    <nav class="navbar navbar-dark navbar-expand-sm text-white p-3 p-sm-4">
-     <a class="navbar-brand border-bottom border-white p-2">Welcome</a>
+     <a class="d-none navbar-brand border-bottom border-white p-2">#</a>
      
      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
      <span class="navbar-toggler-icon"></span>
@@ -61,28 +71,38 @@
      </div>
      
    </nav>
-   </div>
+   </div> 
+   <!--End of Navbar-->
    
-   <div class="d-flex align-items-center justify-content-center text-white border border-white nameSpace">
-     <h1 class="display-5" id="name">Daniel Cruz Abreu </h1>
+   <!--Name Space-->
+   <div class="d-flex flex-column justify-content-center align-items-center text-white border border-white nameSpace">
+     
+      <h1 class="d-none d-sm-inline display-4 name">Daniel Cruz Abreu </h1>
+      <h1 class="d-sm-none">Daniel C Abreu</h1>
+      <hr/ class="color-white w-50">
+      <p class="text-center word ">WIP Portfolio</p>
    </div>
+   <!--End of Name Space-->
    
-   <div class="row m-0 bg-xdark justify-content-center text-center text-white">
-     <div class="row w-100 ">
-     <h1 class="col-12 p-2 m-0 display-5 ">Projects</h1>
-     <div class="row w-100 m-0 justify-content-between">
-       <div class="col-sm-6 p-0">
-         <a href="https://l1k2iddsbi8ggifgzfnsrw-on.drv.tw/startupPage.html"><img src="https://github.com/danielcruzabreu/danielcruzabreu.github.io/blob/master/images/startupPage.PNG?raw=true"></a>
-       </div>
-       <div class="col-sm-6 p-0">
-         <a href="https://l1k2iddsbi8ggifgzfnsrw-on.drv.tw/imgswithbootstrap.html"><img src="https://github.com/danielcruzabreu/danielcruzabreu.github.io/blob/master/images/imageGallery.PNG?raw=true"></a>
-       </div>
-     </div>
-   </div>
-       
-   </div>
    
-   <div class="d-flex newBox justify-content-center text-white border border-white">
+   <!--Projects-->
+   <div class="border border-white bg-xdark justify-content-between">
+     <div class="card bg-xdark text-white border border-white" style="width: 18rem;">
+  <img src="https://github.com/danielcruzabreu/danielcruzabreu.github.io/blob/master/images/startupPage.PNG?raw=true" class="card-img-top" alt="">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="https://l1k2iddsbi8ggifgzfnsrw-on.drv.tw/startupPage.html" class="btn btn-warning">Go somewhere</a>
+  </div>
+</div>
+         <!-- <a href="https://l1k2iddsbi8ggifgzfnsrw-on.drv.tw/startupPage.html" class=""><img src="https://github.com/danielcruzabreu/danielcruzabreu.github.io/blob/master/images/startupPage.PNG?raw=true" class="p-1"></a>-->
+  
+         <!--<a href="https://l1k2iddsbi8ggifgzfnsrw-on.drv.tw/imgswithbootstrap.html" class=""><img src="https://github.com/danielcruzabreu/danielcruzabreu.github.io/blob/master/images/imageGallery.PNG?raw=true" class="p-1"></a>-->
+     
+   </div>
+   <!--End of Projects-->
+
+   <div class="d-flex h-20rem justify-content-center text-white border border-white">
      <h1 class="display-5 pt-2">About Me</h1>
    </div>
    
