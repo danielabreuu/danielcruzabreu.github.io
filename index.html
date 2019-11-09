@@ -13,15 +13,14 @@
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <!--CSS-->
     <style>
+      *{margin:0px;}
       body{
-        width:100%; 
         background-color:black;
         background-size:cover;
         background-repeat:repeat-y;
         font-family:Lato;
       }
       .nameSpace{
-        height:25rem;
         background:url(https://images.unsplash.com/photo-1533922115281-16a28dffcc2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
         background-size:cover;
         background-position:center;
@@ -58,7 +57,6 @@
   
  <body>
    <!--Navbar-->
-   <div class="container-fluid bg-xdark">
      
    <nav class="navbar navbar-dark navbar-expand-sm text-white p-3 p-sm-4">
      <a class="d-none navbar-brand border-bottom border-white p-2">#</a>
@@ -75,16 +73,17 @@
      </div>
      
    </nav>
-   </div> 
+   
    <!--End of Navbar-->
    
    <!--Name Space-->
-   <div class="d-flex flex-column justify-content-center align-items-center text-white border border-white nameSpace">
+   <div class="d-flex flex-column justify-content-center align-items-center text-white border border-white nameSpace p-5">
      
       <h1 class="d-none d-sm-block display-4 name">Daniel Cruz Abreu </h1>
-      <h1 class="d-sm-none">Daniel C Abreu</h1>
+      <h3 class="d-sm-none">Daniel C Abreu</h3>
       <hr/ class="color-white w-50">
       <p class="text-center word ">WIP Portfolio</p>
+
    </div>
    <!--End of Name Space-->
    
@@ -97,7 +96,7 @@
    
    <div class="row border border-warning bg-xdark d-flex justify-content-around">
      
-     <div class="p-1 border border-danger justify-content-center">
+     <div class="col d-flex justify-content-center p-1 border border-danger">
        <!--col start-->
      <div class="card bg-xdark text-white border border-white" style="width:18rem;">
   <img src="https://github.com/danielcruzabreu/danielcruzabreu.github.io/blob/master/images/startupPage.PNG?raw=true" class="card-img-top" alt="">
@@ -110,7 +109,7 @@
      </div>
      <!--col end-->
      
-     <div class="p-1 border border-info">
+     <div class="col d-flex justify-content-center p-1 border border-info">
        <!--col start-->
      <div class="card bg-xdark text-white border border-white" style="width:18rem;">
   <img src="https://github.com/danielcruzabreu/danielcruzabreu.github.io/blob/master/images/startupPage.PNG?raw=true" class="card-img-top" alt="">
@@ -137,4 +136,3 @@
    
 </body>
 </html>
-
